@@ -6,7 +6,7 @@ import lasikImage from '@assets/stock_images/lasik_custom.jpg';
 import lasikBenefitsImage from '@assets/generated_images/lasik_benefits_clear_vision_illustration.png';
 
 const CITY = 'Chhatrapati Sambhajinagar';
-const HOSPITAL_NAME = 'Gore Netralaya';
+const HOSPITAL_NAME = 'Gore Netralaya and Laser Centre';
 
 function FAQAccordion({ faqs, accentColor }: { faqs: any[]; accentColor: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

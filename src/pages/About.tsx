@@ -53,7 +53,7 @@ export default function About() {
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">About Gore Netralaya</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">About Gore Netralaya and Laser Centre</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Pioneering excellence in eye care since 2010
           </p>
@@ -167,7 +167,7 @@ export default function About() {
 
       <section className="py-20 bg-gradient-to-br from-blue-600 to-teal-600 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center">Why Choose Gore Netralaya?</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Why Choose Gore Netralaya and Laser Centre?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               'Expert ophthalmologist with 14+ years of experience',

@@ -6,7 +6,7 @@ import cataractImage from '@assets/stock_images/cataract_custom.jpg';
 import whoNeedsCataractImage from '@assets/Who_Needs_Cataract_Surgery_1766232876891.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
-const HOSPITAL_NAME = 'Gore Netralaya';
+const HOSPITAL_NAME = 'Gore Netralaya and Laser Centre';
 
 function FAQAccordion({ faqs, accentColor }: { faqs: any[]; accentColor: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

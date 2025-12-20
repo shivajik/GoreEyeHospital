@@ -4,7 +4,7 @@ import { SEOHead } from '../../components/SEOHead';
 import cornealImage from '@assets/Cornea_Services_1766232216463.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
-const HOSPITAL_NAME = 'Gore Netralaya';
+const HOSPITAL_NAME = 'Gore Netralaya and Laser Centre';
 
 export default function CorneaserviceServices() {
   const schema = {

@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Eye className="w-8 h-8 text-blue-400" />
-              <span className="text-xl font-bold">Gore Netralaya</span>
+              <span className="text-xl font-bold">Gore Netralaya and Laser Centre</span>
             </div>
             <p className="text-gray-400 mb-4">
               Your trusted partner in comprehensive eye care and vision health since 2010.

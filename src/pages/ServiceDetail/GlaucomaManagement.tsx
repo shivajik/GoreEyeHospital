@@ -5,7 +5,7 @@ import { useState } from 'react';
 import glaucomaImage from '@assets/Glaucoma_Mangement_1766232216461.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
-const HOSPITAL_NAME = 'Gore Netralaya';
+const HOSPITAL_NAME = 'Gore Netralaya and Laser Centre';
 
 function FAQAccordion({ faqs, accentColor }: { faqs: any[]; accentColor: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

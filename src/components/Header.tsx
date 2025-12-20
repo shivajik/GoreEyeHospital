@@ -34,7 +34,7 @@ export default function Header() {
             <div className={`p-2 rounded-lg transition-all ${isScrolled ? 'bg-blue-100' : 'bg-white/10'}`}>
               <Eye className={`w-8 h-8 ${isScrolled ? 'text-blue-600' : 'text-white'}`} />
             </div>
-            <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>Gore Netralaya</span>
+            <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>Gore Netralaya and Laser Centre</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

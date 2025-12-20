@@ -4,7 +4,7 @@ import { SEOHead } from '../../components/SEOHead';
 import pediatricImage from '@assets/Pediatric_Opthalmology_1766232216463.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
-const HOSPITAL_NAME = 'Gore Netralaya';
+const HOSPITAL_NAME = 'Gore Netralaya and Laser Centre';
 
 export default function PediatricOphthalmology() {
   const schema = {
