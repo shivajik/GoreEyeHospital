@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle, ChevronDown } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
 import { useState } from 'react';
 import lasikImage from '@assets/stock_images/lasik_custom.jpg';
+import lasikBenefitsImage from '@assets/generated_images/lasik_benefits_clear_vision_illustration.png';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
@@ -179,8 +180,8 @@ export default function LasikRefractiveSurgery() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
-                src="https://images.pexels.com/photos/3808204/pexels-photo-3808204.jpeg"
-                alt="Patient undergoing LASIK vision correction in Chhatrapati Sambhajinagar"
+                src={lasikBenefitsImage}
+                alt="Benefits of LASIK eye surgery - clear vision freedom from glasses"
                 className="rounded-lg shadow-lg"
               />
               <div>
