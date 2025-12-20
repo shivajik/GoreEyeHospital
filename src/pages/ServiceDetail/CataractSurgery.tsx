@@ -1,11 +1,57 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, MessageCircle, ChevronDown } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import { useState } from 'react';
 import cataractImage from '@assets/stock_images/cataract_custom.jpg';
 import whoNeedsCataractImage from '@assets/Who_Needs_Cataract_Surgery_1766232876891.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
+
+function FAQAccordion({ faqs, accentColor }: { faqs: any[]; accentColor: string }) {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const colorClasses: Record<string, string> = {
+    blue: 'bg-blue-50 border-blue-200 hover:border-blue-300',
+    emerald: 'bg-emerald-50 border-emerald-200 hover:border-emerald-300',
+    indigo: 'bg-indigo-50 border-indigo-200 hover:border-indigo-300',
+  };
+  const accentTextClass: Record<string, string> = {
+    blue: 'text-blue-600',
+    emerald: 'text-emerald-600',
+    indigo: 'text-indigo-600',
+  };
+
+  return (
+    <div className="max-w-3xl mx-auto space-y-3">
+      {faqs.map((faq, idx) => (
+        <div
+          key={idx}
+          className={`border rounded-lg transition-all duration-200 ${
+            colorClasses[accentColor] || colorClasses.blue
+          }`}
+        >
+          <button
+            onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+            className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/50 transition-colors"
+            data-testid={`button-faq-toggle-${idx}`}
+          >
+            <h3 className="text-lg font-semibold text-gray-900 text-left">{faq.q}</h3>
+            <ChevronDown
+              className={`w-5 h-5 ${accentTextClass[accentColor] || accentTextClass.blue} flex-shrink-0 transition-transform duration-300 ${
+                openIndex === idx ? 'rotate-180' : ''
+              }`}
+            />
+          </button>
+          {openIndex === idx && (
+            <div className="px-6 pb-4 pt-0 text-gray-700 border-t border-current border-opacity-10">
+              {faq.a}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function CataractSurgery() {
   const schema = {
@@ -282,8 +328,8 @@ export default function CataractSurgery() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-            <div className="max-w-3xl mx-auto space-y-6">
-              {[
+            <FAQAccordion 
+              faqs={[
                 {
                   q: 'Is cataract surgery safe?',
                   a: 'Absolutely. Cataract surgery is one of the most common and safest surgical procedures performed worldwide. Success rates exceed 95% with modern techniques.',
@@ -308,13 +354,9 @@ export default function CataractSurgery() {
                   q: 'What are the IOL options?',
                   a: 'We offer standard, premium, and specialty lenses including multifocal and toric options. Your surgeon will recommend the best option for your needs.',
                 },
-              ].map((faq, idx) => (
-                <div key={idx} className="bg-gradient-to-r from-blue-50 to-teal-50 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                  <p className="text-gray-700">{faq.a}</p>
-                </div>
-              ))}
-            </div>
+              ]}
+              accentColor="blue"
+            />
           </div>
         </section>
 

@@ -1,10 +1,60 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, MessageCircle, ChevronDown } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import { useState } from 'react';
 import retinaImage from '@assets/stock_images/retina_services_custom.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
+
+function FAQAccordion({ faqs, accentColor }: { faqs: any[]; accentColor: string }) {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const colorClasses: Record<string, string> = {
+    blue: 'bg-blue-50 border-blue-200 hover:border-blue-300',
+    emerald: 'bg-emerald-50 border-emerald-200 hover:border-emerald-300',
+    indigo: 'bg-indigo-50 border-indigo-200 hover:border-indigo-300',
+    purple: 'bg-purple-50 border-purple-200 hover:border-purple-300',
+    orange: 'bg-orange-50 border-orange-200 hover:border-orange-300',
+  };
+  const accentTextClass: Record<string, string> = {
+    blue: 'text-blue-600',
+    emerald: 'text-emerald-600',
+    indigo: 'text-indigo-600',
+    purple: 'text-purple-600',
+    orange: 'text-orange-600',
+  };
+
+  return (
+    <div className="max-w-3xl mx-auto space-y-3">
+      {faqs.map((faq, idx) => (
+        <div
+          key={idx}
+          className={`border rounded-lg transition-all duration-200 ${
+            colorClasses[accentColor] || colorClasses.blue
+          }`}
+        >
+          <button
+            onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+            className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/50 transition-colors"
+            data-testid={`button-faq-toggle-${idx}`}
+          >
+            <h3 className="text-lg font-semibold text-gray-900 text-left">{faq.q}</h3>
+            <ChevronDown
+              className={`w-5 h-5 ${accentTextClass[accentColor] || accentTextClass.blue} flex-shrink-0 transition-transform duration-300 ${
+                openIndex === idx ? 'rotate-180' : ''
+              }`}
+            />
+          </button>
+          {openIndex === idx && (
+            <div className="px-6 pb-4 pt-0 text-gray-700 border-t border-current border-opacity-10">
+              {faq.a}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function RetinaServices() {
   const schema = {
@@ -368,8 +418,8 @@ export default function RetinaServices() {
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-            <div className="max-w-3xl mx-auto space-y-6">
-              {[
+            <FAQAccordion 
+              faqs={[
                 {
                   q: 'What is diabetic retinopathy?',
                   a: 'It\'s an eye disease caused by diabetes where high blood sugar damages blood vessels in the retina. It progresses in stages and can lead to vision loss if untreated.',
@@ -394,13 +444,9 @@ export default function RetinaServices() {
                   q: 'How long is recovery after retinal surgery?',
                   a: 'Recovery varies by procedure complexity. Most patients see improvement within weeks, though complete healing can take several months.',
                 },
-              ].map((faq, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-lg border border-red-100">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                  <p className="text-gray-700">{faq.a}</p>
-                </div>
-              ))}
-            </div>
+              ]}
+              accentColor="orange"
+            />
           </div>
         </section>
 

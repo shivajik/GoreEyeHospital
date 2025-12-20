@@ -1,10 +1,60 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, ChevronDown } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import { useState } from 'react';
 import lasikImage from '@assets/stock_images/lasik_custom.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
+
+function FAQAccordion({ faqs, accentColor }: { faqs: any[]; accentColor: string }) {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const colorClasses: Record<string, string> = {
+    blue: 'bg-blue-50 border-blue-200 hover:border-blue-300',
+    emerald: 'bg-emerald-50 border-emerald-200 hover:border-emerald-300',
+    indigo: 'bg-indigo-50 border-indigo-200 hover:border-indigo-300',
+    purple: 'bg-purple-50 border-purple-200 hover:border-purple-300',
+    orange: 'bg-orange-50 border-orange-200 hover:border-orange-300',
+  };
+  const accentTextClass: Record<string, string> = {
+    blue: 'text-blue-600',
+    emerald: 'text-emerald-600',
+    indigo: 'text-indigo-600',
+    purple: 'text-purple-600',
+    orange: 'text-orange-600',
+  };
+
+  return (
+    <div className="max-w-3xl mx-auto space-y-3">
+      {faqs.map((faq, idx) => (
+        <div
+          key={idx}
+          className={`border rounded-lg transition-all duration-200 ${
+            colorClasses[accentColor] || colorClasses.blue
+          }`}
+        >
+          <button
+            onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+            className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/50 transition-colors"
+            data-testid={`button-faq-toggle-${idx}`}
+          >
+            <h3 className="text-lg font-semibold text-gray-900 text-left">{faq.q}</h3>
+            <ChevronDown
+              className={`w-5 h-5 ${accentTextClass[accentColor] || accentTextClass.blue} flex-shrink-0 transition-transform duration-300 ${
+                openIndex === idx ? 'rotate-180' : ''
+              }`}
+            />
+          </button>
+          {openIndex === idx && (
+            <div className="px-6 pb-4 pt-0 text-gray-700 border-t border-current border-opacity-10">
+              {faq.a}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function LasikRefractiveSurgery() {
   const schema = {
@@ -270,8 +320,8 @@ export default function LasikRefractiveSurgery() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-            <div className="max-w-3xl mx-auto space-y-6">
-              {[
+            <FAQAccordion 
+              faqs={[
                 {
                   q: 'Is LASIK surgery safe?',
                   a: 'Yes, LASIK is FDA-approved and one of the safest elective surgical procedures available. Complications are rare, and most are mild and treatable.',
@@ -296,13 +346,9 @@ export default function LasikRefractiveSurgery() {
                   q: 'What\'s the success rate?',
                   a: 'Over 95% of patients achieve 20/20 vision or better after LASIK. The vast majority are satisfied with their results.',
                 },
-              ].map((faq, idx) => (
-                <div key={idx} className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                  <p className="text-gray-700">{faq.a}</p>
-                </div>
-              ))}
-            </div>
+              ]}
+              accentColor="purple"
+            />
           </div>
         </section>
 
