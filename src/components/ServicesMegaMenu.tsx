@@ -54,8 +54,8 @@ const services = [
 
 export default function ServicesMegaMenu() {
   return (
-    <div className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100 pt-3 z-50 w-11/12 max-w-5xl`}>
-      <div className={`bg-white shadow-xl rounded-xl overflow-hidden border border-gray-100 backdrop-blur-sm`}>
+    <div className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100 pt-3 z-50 w-screen`} style={{ maxWidth: '800px' }}>
+      <div className={`bg-white shadow-xl rounded-xl overflow-hidden border border-gray-100`}>
         <div className="p-6">
           {/* Header */}
           <div className="mb-5">
@@ -64,7 +64,7 @@ export default function ServicesMegaMenu() {
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             {services.map((service) => {
               const Icon = service.icon;
               return (
