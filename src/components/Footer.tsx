@@ -52,11 +52,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">Paithan Gate, Aurangabad, Maharashtra</span>
+                <a href="https://www.google.com/maps/place/Gore+Netralaya+and+Laser+Centre/@19.8828153,75.321341,17z/data=!3m1!4b1!4m6!3m5!1s0x3bdb98729df5ebab:0xad2e339a3ff9dc43!8m2!3d19.8828103!4d75.3239159!16s%2Fg%2F11ckc4d6qc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">Nageshwarwadi - Nirala Bazar Rd, Swatantrya Sainik Colony, Aurangpura, Chhatrapati Sambhajinagar, Maharashtra 431001</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-400">+91 123-456-7890</span>
+                <a href="tel:+919422653331" className="text-gray-400 hover:text-blue-400 transition-colors">+91 94226 53331</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-blue-400" />

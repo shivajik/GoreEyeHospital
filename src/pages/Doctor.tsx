@@ -50,7 +50,7 @@ export default function Doctor() {
                 </div>
 
                 <div className="space-y-3">
-                  <a href="tel:+919876543210" className="block w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                  <a href="tel:+919422653331" className="block w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
                     Call Now
                   </a>
                   <Link to="/contact" className="block w-full bg-blue-400 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition-colors">

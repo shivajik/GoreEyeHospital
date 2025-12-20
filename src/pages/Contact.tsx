@@ -27,14 +27,14 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: 'Paithan Gate, Aurangabad, Maharashtra',
-      subtext: 'Gore Netralaya and Laser Centre',
+      content: 'Nageshwarwadi - Nirala Bazar Rd',
+      subtext: 'Swatantrya Sainik Colony, Aurangpura, Chhatrapati Sambhajinagar, Maharashtra 431001',
     },
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+91 123-456-7890',
-      subtext: '+91 098-765-4321',
+      content: '+91 94226 53331',
+      subtext: 'Available during working hours',
     },
     {
       icon: Mail,
