@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
 import cataractImage from '@assets/stock_images/cataract_custom.jpg';
+import whoNeedsCataractImage from '@assets/image_1766232696206.png';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
@@ -133,8 +134,8 @@ export default function CataractSurgery() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
-                src="https://images.pexels.com/photos/3973617/pexels-photo-3973617.jpeg"
-                alt="Patient consultation for cataract treatment in Chhatrapati Sambhajinagar"
+                src={whoNeedsCataractImage}
+                alt="Who needs cataract surgery symptoms and indicators"
                 className="rounded-lg shadow-lg"
               />
               <div>
