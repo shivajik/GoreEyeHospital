@@ -98,10 +98,11 @@ export default function Home() {
             {highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group animate-fade-in"
+                style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                  <item.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+                  <item.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors group-hover:animate-bounce" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>

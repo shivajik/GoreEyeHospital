@@ -67,7 +67,8 @@ export default function Contact() {
             {contactInfo.map((info, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 animate-fade-in"
+                style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <info.icon className="w-6 h-6 text-blue-600" />
@@ -91,7 +92,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-20 outline-none transition-all"
+                    className="input-modern"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -105,7 +106,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-20 outline-none transition-all"
+                      className="input-modern"
                       placeholder="Enter your phone"
                     />
                   </div>
@@ -117,7 +118,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-20 outline-none transition-all"
+                      className="input-modern"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -131,7 +132,7 @@ export default function Contact() {
                       value={formData.service}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-20 outline-none transition-all"
+                      className="input-modern"
                     >
                       <option value="">Select a service</option>
                       <option value="cataract">Cataract Surgery</option>
@@ -148,7 +149,7 @@ export default function Contact() {
                       name="date"
                       value={formData.date}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-20 outline-none transition-all"
+                      className="input-modern"
                     />
                   </div>
                 </div>
@@ -160,7 +161,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-20 outline-none transition-all"
+                    className="input-modern"
                     placeholder="Tell us about your eye condition..."
                   ></textarea>
                 </div>

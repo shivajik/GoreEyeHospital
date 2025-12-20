@@ -100,7 +100,8 @@ export default function Services() {
             {services.map((service, idx) => (
               <div
                 key={service.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group animate-fade-in"
+                style={{ animationDelay: `${(idx % 3) * 0.1}s` }}
               >
                 <div className="relative h-64 overflow-hidden">
                   <img

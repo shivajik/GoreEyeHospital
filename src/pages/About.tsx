@@ -114,7 +114,8 @@ export default function About() {
             {values.map((value, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 animate-fade-in"
+                style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                   <value.icon className="w-8 h-8 text-blue-600" />
@@ -134,7 +135,8 @@ export default function About() {
             {testimonials.map((testimonial, idx) => (
               <div
                 key={idx}
-                className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-blue-200"
+                className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-blue-200 animate-fade-in"
+                style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <img
