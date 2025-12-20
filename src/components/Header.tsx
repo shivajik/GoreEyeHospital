@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Eye, Menu, X } from 'lucide-react';
+import { Eye, Menu, X, ChevronDown } from 'lucide-react';
+import ServicesMegaMenu from './ServicesMegaMenu';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,17 +39,22 @@ export default function Header() {
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`transition-colors relative font-medium ${
-                  isActive(link.path)
-                    ? isScrolled ? 'text-blue-600' : 'text-white'
-                    : isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
-                } ${isActive(link.path) ? 'after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-600' : ''}`}
-              >
-                {link.label}
-              </Link>
+              <div key={link.path} className={link.label === 'Services' ? 'group relative' : ''}>
+                <Link
+                  to={link.path}
+                  className={`transition-colors relative font-medium flex items-center gap-1 ${
+                    isActive(link.path)
+                      ? isScrolled ? 'text-blue-600' : 'text-white'
+                      : isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
+                  } ${isActive(link.path) ? 'after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-600' : ''}`}
+                >
+                  {link.label}
+                  {link.label === 'Services' && (
+                    <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
+                  )}
+                </Link>
+                {link.label === 'Services' && <ServicesMegaMenu isScrolled={isScrolled} />}
+              </div>
             ))}
             <Link
               to="/contact"
@@ -73,14 +79,25 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg mt-2 rounded-b-2xl p-4 space-y-3">
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="block px-4 py-2 text-gray-700 hover:text-blue-600 transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
+              <div key={link.path}>
+                <Link
+                  to={link.path}
+                  className="block px-4 py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+                {link.label === 'Services' && (
+                  <div className="pl-4 mt-2 space-y-2 border-l-2 border-gray-200">
+                    <Link to="/services/cataract-surgery" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>Cataract Surgery</Link>
+                    <Link to="/services/lasik-refractive-surgery" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>LASIK & Refractive Surgery</Link>
+                    <Link to="/services/retina-services" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>Retina Services</Link>
+                    <Link to="/services/glaucoma-management" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>Glaucoma Management</Link>
+                    <Link to="/services/pediatric-ophthalmology" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>Pediatric Ophthalmology</Link>
+                    <Link to="/services/cornea-services" className="block text-sm text-gray-600 hover:text-blue-600 transition-colors" onClick={() => setMobileMenuOpen(false)}>Cornea Services</Link>
+                  </div>
+                )}
+              </div>
             ))}
             <Link
               to="/contact"
