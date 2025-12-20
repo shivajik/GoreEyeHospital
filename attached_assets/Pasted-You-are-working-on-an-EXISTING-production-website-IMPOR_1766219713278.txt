@@ -1,0 +1,127 @@
+You are working on an EXISTING production website.
+IMPORTANT: Do NOT break or refactor existing features, routes, styles, or layouts unless explicitly required.
+
+TASK OVERVIEW:
+Enhance the existing “Our Services” section of the website with individual service pages, human-written content, images, and full SEO/AEO/GEO optimization.
+
+STEP 1: ANALYZE EXISTING IMPLEMENTATION
+- Scan the current codebase.
+- Identify:
+  - Existing “Our Services” page or section
+  - Current service list (names, routes, data source)
+  - Routing pattern (App Router / Pages Router)
+  - Existing SEO utilities or metadata handling
+- Reuse existing patterns wherever possible.
+
+STEP 2: SERVICE PAGES CREATION
+For EACH service listed under “Our Services”:
+- Create an individual service detail page
+- Follow existing routing and folder conventions
+- URL structure example:
+  /services/cataract-surgery
+  /services/laser-vision-correction
+  /services/glaucoma-treatment
+  /services/retina-care
+  /services/pediatric-eye-care
+
+Each service page must include:
+1. Hero section
+   - Service name
+   - One-line benefit-driven headline
+   - Relevant service image (use optimized placeholder if real image not available)
+
+2. Detailed Content Sections (Human Tone)
+   - What is this service?
+   - Who needs this treatment?
+   - How the procedure works (simple, non-medical tone)
+   - Benefits for patients
+   - When to consult a doctor
+   - Safety & technology used
+
+IMPORTANT CONTENT RULES:
+- Content must sound human-written
+- Use natural sentence variations
+- Avoid robotic repetition
+- Use conversational explanations
+- Write as an experienced eye-care professional explaining to a patient
+- Google should NOT detect it as AI-written content
+
+STEP 3: IMAGES
+- Add at least:
+  - 1 hero image per service
+  - 2 supporting section images
+- Use:
+  - next/image for optimization
+  - SEO-friendly alt text including service + location
+    Example:
+    “Cataract surgery treatment at eye hospital in Chhatrapati Sambhajinagar”
+
+STEP 4: SEO OPTIMIZATION (MANDATORY)
+For every service page:
+- Dynamic <title> including:
+  Service Name + City
+  Example:
+  “Cataract Surgery in Chhatrapati Sambhajinagar | [Hospital Name]”
+
+- Meta description:
+  - 150–160 characters
+  - Include service + location + benefit
+
+- Proper heading hierarchy:
+  - One H1 only
+  - Logical H2 and H3 structure
+
+- Internal linking:
+  - Link back to Services page
+  - Link to related services
+  - Link to Contact / Appointment page
+
+STEP 5: GEO OPTIMIZATION
+- Naturally include:
+  - City: Chhatrapati Sambhajinagar / Aurangabad
+  - Area / locality references (if available)
+- Add NAP consistency where relevant
+- Embed Google Map on main Services page (if not already present)
+
+STEP 6: AEO (ANSWER ENGINE OPTIMIZATION)
+For EACH service page:
+- Add an FAQ section (4–6 questions)
+- Questions should match real user queries, such as:
+  - “Is cataract surgery safe?”
+  - “How long does laser eye surgery take?”
+  - “Is this treatment painful?”
+
+- Implement FAQ Schema (JSON-LD)
+- Answers must be:
+  - Short
+  - Clear
+  - Voice-search friendly
+
+STEP 7: SCHEMA & STRUCTURED DATA
+- Add or extend:
+  - MedicalBusiness / LocalBusiness schema
+  - Service schema where applicable
+- Ensure schema does NOT duplicate existing markup
+
+STEP 8: PERFORMANCE & QUALITY CHECK
+- Ensure:
+  - No broken routes
+  - No SEO metadata conflicts
+  - Images are optimized
+  - Mobile responsiveness maintained
+  - Lighthouse SEO score improvement
+
+STEP 9: FINAL VERIFICATION
+Before finishing:
+- Verify that all service pages are accessible
+- Confirm content feels human and educational
+- Ensure SEO, AEO, and GEO signals are properly implemented
+- Confirm existing website behavior remains unchanged
+
+OUTPUT EXPECTATION:
+- Enhanced Services page
+- Individual service pages
+- Human-written content
+- SEO-ready metadata
+- FAQ schema & local optimization
+- Zero regression in existing functionality
