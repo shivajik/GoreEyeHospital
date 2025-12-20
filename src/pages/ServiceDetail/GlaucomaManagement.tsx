@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
-import glaucomaImage from '@assets/stock_images/glaucoma_eye_disease_c56902c9.jpg';
+import glaucomaImage from '@assets/Glaucoma_Mangement_1766232216461.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';

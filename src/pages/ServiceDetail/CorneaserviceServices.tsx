@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
-import cornealImage from '@assets/stock_images/cornea_transplant_ey_4507d1e4.jpg';
+import cornealImage from '@assets/Cornea_Services_1766232216463.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';

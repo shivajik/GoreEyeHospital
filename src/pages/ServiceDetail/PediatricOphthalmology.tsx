@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Smile } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
-import pediatricImage from '@assets/stock_images/pediatric_ophthalmol_65a83be7.jpg';
+import pediatricImage from '@assets/Pediatric_Opthalmology_1766232216463.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';

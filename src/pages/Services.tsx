@@ -47,7 +47,7 @@ export default function Services() {
       id: 4,
       title: 'Glaucoma Management',
       description: 'Early detection and advanced treatment to preserve vision',
-      image: 'https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: new URL('@assets/Glaucoma_Mangement_1766232216461.jpg', import.meta.url).href,
       features: [
         'Advanced Diagnostics',
         'Medical Management',
@@ -60,7 +60,7 @@ export default function Services() {
       id: 5,
       title: 'Pediatric Ophthalmology',
       description: 'Specialized care for children\'s eye health and development',
-      image: 'https://images.pexels.com/photos/6285310/pexels-photo-6285310.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: new URL('@assets/Pediatric_Opthalmology_1766232216463.jpg', import.meta.url).href,
       features: [
         'Squint Correction',
         'Amblyopia Treatment',
@@ -73,7 +73,7 @@ export default function Services() {
       id: 6,
       title: 'Cornea Services',
       description: 'Expert treatment for corneal disorders and transplantation',
-      image: 'https://images.pexels.com/photos/3808214/pexels-photo-3808214.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: new URL('@assets/Cornea_Services_1766232216463.jpg', import.meta.url).href,
       features: [
         'Corneal Transplant',
         'Keratoconus Treatment',
