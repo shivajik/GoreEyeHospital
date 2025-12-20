@@ -26,8 +26,8 @@ export default function Doctor() {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-20">
-      <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white">
+    <div className="min-h-screen bg-white">
+      <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Dr. Abhijit Gore</h1>
           <p className="text-2xl text-blue-100">MS - Ophthalmology | Leading Eye Specialist</p>
