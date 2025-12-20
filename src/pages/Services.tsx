@@ -1,5 +1,6 @@
-import { Eye, CheckCircle, ArrowRight } from 'lucide-react';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getServiceSlug } from '../utils/slugify';
 
 export default function Services() {
   const services = [
@@ -128,7 +129,7 @@ export default function Services() {
                   </div>
 
                   <Link
-                    to="/contact"
+                    to={`/services/${getServiceSlug(service.title)}`}
                     className="inline-flex items-center space-x-2 text-blue-600 font-semibold hover:text-blue-700 group/link"
                   >
                     <span>Learn More</span>
