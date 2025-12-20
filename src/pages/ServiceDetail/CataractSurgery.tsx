@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import cataractImage from '@assets/stock_images/cataract_surgery_eye_cd8a073f.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
@@ -119,7 +120,7 @@ export default function CataractSurgery() {
                 </p>
               </div>
               <img
-                src="https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg"
+                src={cataractImage}
                 alt="Advanced cataract surgery equipment at eye hospital in Chhatrapati Sambhajinagar"
                 className="rounded-lg shadow-lg"
               />

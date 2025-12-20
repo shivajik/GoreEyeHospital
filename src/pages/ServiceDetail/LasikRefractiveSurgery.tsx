@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import lasikImage from '@assets/stock_images/lasik_eye_surgery_re_05a435c3.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
@@ -115,7 +116,7 @@ export default function LasikRefractiveSurgery() {
                 </p>
               </div>
               <img
-                src="https://images.pexels.com/photos/3808221/pexels-photo-3808221.jpeg"
+                src={lasikImage}
                 alt="Advanced LASIK surgery equipment at eye hospital in Chhatrapati Sambhajinagar"
                 className="rounded-lg shadow-lg"
               />

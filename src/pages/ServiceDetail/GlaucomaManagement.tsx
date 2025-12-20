@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import glaucomaImage from '@assets/stock_images/glaucoma_eye_disease_c56902c9.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
@@ -112,7 +113,7 @@ export default function GlaucomaManagement() {
                 </p>
               </div>
               <img
-                src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg"
+                src={glaucomaImage}
                 alt="Advanced glaucoma diagnostic equipment at eye hospital in Chhatrapati Sambhajinagar"
                 className="rounded-lg shadow-lg"
               />

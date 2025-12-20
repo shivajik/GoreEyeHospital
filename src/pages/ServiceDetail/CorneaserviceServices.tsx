@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import cornealImage from '@assets/stock_images/cornea_transplant_ey_4507d1e4.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
@@ -56,7 +57,7 @@ export default function CorneaserviceServices() {
                 </p>
               </div>
               <img
-                src="https://images.pexels.com/photos/3808214/pexels-photo-3808214.jpeg"
+                src={cornealImage}
                 alt="Advanced corneal surgical equipment at eye hospital in Chhatrapati Sambhajinagar"
                 className="rounded-lg shadow-lg"
               />

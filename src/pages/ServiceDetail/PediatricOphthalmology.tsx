@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Smile } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import pediatricImage from '@assets/stock_images/pediatric_ophthalmol_65a83be7.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
@@ -56,7 +57,7 @@ export default function PediatricOphthalmology() {
                 </p>
               </div>
               <img
-                src="https://images.pexels.com/photos/6285310/pexels-photo-6285310.jpeg"
+                src={pediatricImage}
                 alt="Pediatric eye examination at friendly eye hospital in Chhatrapati Sambhajinagar"
                 className="rounded-lg shadow-lg"
               />

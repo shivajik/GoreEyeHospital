@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
+import retinaImage from '@assets/stock_images/retina_disease_diabe_85546dfd.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
@@ -115,7 +116,7 @@ export default function RetinaServices() {
                 </p>
               </div>
               <img
-                src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg"
+                src={retinaImage}
                 alt="Advanced retina diagnostic equipment at eye hospital in Chhatrapati Sambhajinagar"
                 className="rounded-lg shadow-lg"
               />
