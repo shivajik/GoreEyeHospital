@@ -139,29 +139,38 @@ export default function CataractSurgery() {
                 className="rounded-lg shadow-lg"
               />
               <div>
-                <h2 className="text-4xl font-bold mb-6 text-gray-900">Who Needs Cataract Surgery?</h2>
-                <p className="text-lg text-gray-700 mb-6">
-                  You might benefit from cataract surgery if you experience:
+                <h2 className="text-4xl font-bold mb-2 text-gray-900">Who Needs Cataract Surgery?</h2>
+                <p className="text-lg text-blue-600 font-semibold mb-8">
+                  You might benefit from cataract surgery if you experience any of these symptoms:
                 </p>
-                <ul className="space-y-3 mb-6">
-                  {[
-                    'Blurred or cloudy vision in one or both eyes',
-                    'Difficulty seeing at night or in dim lighting',
-                    'Frequent changes in eyeglass prescription',
-                    'Sensitivity to light and glare',
-                    'Colors appearing faded or yellowed',
-                    'Trouble reading or doing detailed work',
-                    'Difficulty driving safely, especially at night',
-                  ].map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
-                      <span className="text-gray-700">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-lg text-gray-700">
-                  Most cataracts develop after age 60, though they can occur at any age. If your cataract is affecting your daily activities, surgery might be the right choice for you.
-                </p>
+                
+                <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-8 rounded-xl border border-blue-100 mb-8">
+                  <ul className="space-y-4">
+                    {[
+                      'Blurred or cloudy vision in one or both eyes',
+                      'Difficulty seeing at night or in dim lighting',
+                      'Frequent changes in eyeglass prescription',
+                      'Sensitivity to light and glare',
+                      'Colors appearing faded or yellowed',
+                      'Trouble reading or doing detailed work',
+                      'Difficulty driving safely, especially at night',
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-4">
+                        <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-700 font-medium">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
+                  <p className="text-sm text-gray-600 uppercase tracking-wide font-semibold text-blue-600 mb-2">
+                    Important Note
+                  </p>
+                  <p className="text-gray-800 leading-relaxed">
+                    Most cataracts develop after <span className="font-bold text-blue-700">age 60</span>, though they can occur at any age. <span className="font-semibold">If your cataract is affecting your daily activities and quality of life, surgery might be the right choice for you.</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
