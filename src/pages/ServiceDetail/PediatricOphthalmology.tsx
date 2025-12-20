@@ -33,7 +33,7 @@ export default function PediatricOphthalmology() {
         {/* Hero */}
         <section className="relative py-20 bg-gradient-to-br from-pink-900 via-pink-700 to-rose-600 text-white -mt-20 pt-40">
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Children's Eye Care in {CITY}</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Children's Eye Care</h1>
             <p className="text-xl text-pink-100 max-w-3xl mx-auto">
               Specialized care for children's eye health with a compassionate, child-friendly approach
             </p>
