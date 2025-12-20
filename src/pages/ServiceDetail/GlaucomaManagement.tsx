@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, AlertTriangle, ChevronDown } from 'lucide-react';
+import { ArrowRight, CheckCircle, AlertTriangle, ChevronDown, Eye, Zap } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
 import { useState } from 'react';
 import glaucomaImage from '@assets/Glaucoma_Mangement_1766232216461.jpg';
@@ -168,12 +168,14 @@ export default function GlaucomaManagement() {
         </section>
 
         {/* Risk & Symptoms */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-emerald-50 p-8 rounded-lg border-l-4 border-emerald-600">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-2">
-                  <AlertTriangle className="w-6 h-6 text-emerald-600" />
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 p-8 rounded-lg border-l-4 border-emerald-600 shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                  <div className="bg-emerald-600 text-white p-2 rounded-lg">
+                    <AlertTriangle className="w-6 h-6" />
+                  </div>
                   Risk Factors
                 </h3>
                 <ul className="space-y-3">
@@ -193,15 +195,23 @@ export default function GlaucomaManagement() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-cyan-50 p-8 rounded-lg border-l-4 border-cyan-600">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">Early Detection Matters</h3>
+              <div className="bg-gradient-to-br from-cyan-50 to-emerald-50 p-8 rounded-lg border-l-4 border-cyan-600 shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                  <div className="bg-cyan-600 text-white p-2 rounded-lg">
+                    <Eye className="w-6 h-6" />
+                  </div>
+                  Early Detection Matters
+                </h3>
                 <p className="text-gray-700 mb-4">
                   Most glaucomas have no early symptoms. Vision loss occurs gradually and may go unnoticed until significant damage has occurred.
                 </p>
-                <div className="bg-white p-4 rounded border border-cyan-200 mb-4">
-                  <p className="text-sm text-gray-700 font-semibold">
-                    This is why regular eye exams are critical, especially if you have risk factors.
-                  </p>
+                <div className="bg-white p-4 rounded-lg border-2 border-cyan-300 mb-4 shadow-sm">
+                  <div className="flex items-start gap-3">
+                    <Zap className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5" />
+                    <p className="text-sm text-gray-900 font-semibold">
+                      This is why regular eye exams are critical, especially if you have risk factors.
+                    </p>
+                  </div>
                 </div>
                 <p className="text-gray-700">
                   If caught early, treatment can prevent vision loss. Your eye pressure will be measured, and your optic nerve will be examined regularly.
