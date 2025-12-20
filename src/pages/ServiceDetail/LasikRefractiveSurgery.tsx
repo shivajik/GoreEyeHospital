@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
-import lasikImage from '@assets/stock_images/lasik_eye_surgery_re_05a435c3.jpg';
+import lasikImage from '@assets/stock_images/lasik_custom.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';

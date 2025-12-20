@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
 import { SEOHead } from '../../components/SEOHead';
-import retinaImage from '@assets/stock_images/retina_disease_diabe_85546dfd.jpg';
+import retinaImage from '@assets/stock_images/retina_services_custom.jpg';
 
 const CITY = 'Chhatrapati Sambhajinagar';
 const HOSPITAL_NAME = 'Gore Netralaya';
