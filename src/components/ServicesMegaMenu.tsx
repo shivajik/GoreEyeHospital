@@ -58,8 +58,8 @@ const services = [
 
 export default function ServicesMegaMenu({ isScrolled }: MegaMenuProps) {
   return (
-    <div className={`absolute top-full left-0 right-0 transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100 pt-4 z-40`}>
-      <div className={`${isScrolled ? 'bg-white shadow-2xl' : 'bg-white/95 backdrop-blur-md shadow-2xl'} rounded-2xl mx-4`}>
+    <div className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100 pt-4 z-50 w-screen max-w-7xl px-4`}>
+      <div className={`${isScrolled ? 'bg-white shadow-2xl' : 'bg-white shadow-2xl'} rounded-2xl overflow-hidden`}>
         <div className="p-8">
           {/* Header */}
           <div className="mb-8">
@@ -68,7 +68,7 @@ export default function ServicesMegaMenu({ isScrolled }: MegaMenuProps) {
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => {
               const Icon = service.icon;
               return (
