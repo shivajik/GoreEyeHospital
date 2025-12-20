@@ -151,7 +151,7 @@
   }
 
   .button-interactive {
-    @apply relative overflow-hidden transition-all duration-300 group;
+    @apply relative overflow-hidden transition-all duration-300;
   }
 
   .button-interactive::before {
