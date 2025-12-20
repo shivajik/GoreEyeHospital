@@ -53,7 +53,7 @@ export default function Header() {
                     <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
                   )}
                 </Link>
-                {link.label === 'Services' && <ServicesMegaMenu isScrolled={isScrolled} />}
+                {link.label === 'Services' && <ServicesMegaMenu />}
               </div>
             ))}
             <Link

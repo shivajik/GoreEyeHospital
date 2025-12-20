@@ -1,10 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Eye, Heart, Shield, Baby, Microscope } from 'lucide-react';
 
-interface MegaMenuProps {
-  isScrolled: boolean;
-}
-
 const services = [
   {
     id: 1,
@@ -56,19 +52,19 @@ const services = [
   },
 ];
 
-export default function ServicesMegaMenu({ isScrolled }: MegaMenuProps) {
+export default function ServicesMegaMenu() {
   return (
-    <div className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100 pt-4 z-50 w-screen max-w-7xl px-4`}>
-      <div className={`${isScrolled ? 'bg-white shadow-2xl' : 'bg-white shadow-2xl'} rounded-2xl overflow-hidden`}>
-        <div className="p-8">
+    <div className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100 pt-3 z-50 w-11/12 max-w-5xl`}>
+      <div className={`bg-white shadow-xl rounded-xl overflow-hidden border border-gray-100 backdrop-blur-sm`}>
+        <div className="p-6">
           {/* Header */}
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Services</h3>
-            <p className="text-gray-600">Comprehensive eye care solutions tailored to your needs</p>
+          <div className="mb-5">
+            <h3 className="text-lg font-bold text-gray-900 mb-1">Our Services</h3>
+            <p className="text-sm text-gray-600">Professional eye care solutions</p>
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
             {services.map((service) => {
               const Icon = service.icon;
               return (
@@ -81,26 +77,26 @@ export default function ServicesMegaMenu({ isScrolled }: MegaMenuProps) {
                   <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover/item:opacity-10 transition-opacity duration-300`}></div>
 
                   {/* Content */}
-                  <div className="relative p-6">
+                  <div className="relative p-4">
                     {/* Icon */}
-                    <div className={`mb-4 inline-flex p-3 rounded-lg bg-gradient-to-br ${service.color}`}>
-                      <Icon className="w-6 h-6 text-white" />
+                    <div className={`mb-3 inline-flex p-2 rounded-lg bg-gradient-to-br ${service.color}`}>
+                      <Icon className="w-5 h-5 text-white" />
                     </div>
 
                     {/* Title */}
-                    <h4 className="text-lg font-bold text-gray-900 mb-2 group-hover/item:text-blue-600 transition-all duration-300">
+                    <h4 className="text-base font-bold text-gray-900 mb-1 group-hover/item:text-blue-600 transition-all duration-300 line-clamp-1">
                       {service.title}
                     </h4>
 
                     {/* Description */}
-                    <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                    <p className="text-xs text-gray-600 mb-3 line-clamp-1">
                       {service.description}
                     </p>
 
                     {/* Link */}
-                    <div className="flex items-center text-sm font-semibold text-blue-600 group-hover/item:text-blue-700 transition-colors">
+                    <div className="flex items-center text-xs font-semibold text-blue-600 group-hover/item:text-blue-700 transition-colors">
                       <span>Learn More</span>
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover/item:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-3 h-3 ml-1 group-hover/item:translate-x-0.5 transition-transform" />
                     </div>
                   </div>
 
@@ -112,17 +108,17 @@ export default function ServicesMegaMenu({ isScrolled }: MegaMenuProps) {
           </div>
 
           {/* Footer CTA */}
-          <div className="mt-8 pt-6 border-t border-gray-200">
-            <div className="flex items-center justify-between">
-              <p className="text-sm text-gray-600">
-                Can't find what you're looking for?
+          <div className="mt-5 pt-4 border-t border-gray-200">
+            <div className="flex items-center justify-between gap-4">
+              <p className="text-xs text-gray-600">
+                View all services
               </p>
               <Link
                 to="/services"
-                className="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-all transform hover:scale-105"
+                className="inline-flex items-center space-x-1 bg-blue-600 text-white px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-blue-700 transition-all"
               >
-                <span>View All Services</span>
-                <ArrowRight className="w-4 h-4" />
+                <span>All Services</span>
+                <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
           </div>
