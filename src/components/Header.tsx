@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Eye, Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import ServicesMegaMenu from './ServicesMegaMenu';
+import logoImage from '@assets/Gore_Netralaya_and_Laser_Centre_1766401703179.png';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,8 +33,8 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 group cursor-pointer">
-            <div className={`p-2 rounded-lg transition-all ${isScrolled ? 'bg-blue-100' : 'bg-white/10'}`}>
-              <Eye className={`w-8 h-8 ${isScrolled ? 'text-blue-600' : 'text-white'}`} />
+            <div className={`p-1 rounded-lg transition-all ${isScrolled ? 'bg-white' : 'bg-white/10'}`}>
+              <img src={logoImage} alt="Gore Netralaya Logo" className="w-10 h-10 object-contain" />
             </div>
             <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>Gore Netralaya and Laser Centre</span>
           </Link>
