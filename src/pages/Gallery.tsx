@@ -31,6 +31,11 @@ const galleryImages = [
     url: '/attached_assets/5_1766399400954.jpg',
     title: 'Patient Care & Treatment',
     category: 'Treatment'
+  },
+  {
+    url: '/attached_assets/ot1_1766400741410.jpg',
+    title: 'Advanced Operating Theatre',
+    category: 'Surgery'
   }
 ];
 
