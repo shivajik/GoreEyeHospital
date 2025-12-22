@@ -1,5 +1,6 @@
-import { GraduationCap, Award, ChevronRight, Stethoscope, Star, Users } from 'lucide-react';
+import { GraduationCap, Award, ChevronRight, Star, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import drGoreImage from '@assets/DrAbhijitGore_1766400418418.jpg';
 
 export default function Doctor() {
   const qualifications = [
@@ -39,8 +40,8 @@ export default function Doctor() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
             <div className="lg:col-span-1">
               <div className="bg-gradient-to-br from-blue-600 to-teal-600 rounded-3xl overflow-hidden shadow-2xl p-8 text-white text-center sticky top-32">
-                <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
-                  <Stethoscope className="w-20 h-20 text-blue-600" />
+                <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl overflow-hidden">
+                  <img src={drGoreImage} alt="Dr. Abhijit Gore" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-3xl font-bold mb-2">Dr. Abhijit Gore</h3>
                 <p className="text-blue-100 text-lg mb-6">MS - Ophthalmology (Gold Medalist)</p>
