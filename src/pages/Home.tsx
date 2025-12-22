@@ -68,7 +68,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto leading-relaxed">
-              Award-winning eye care center delivering world-class expertise with cutting-edge technology and compassionate service to over 50,000 satisfied patients in Chhatrapati Sambhajinagar
+              Award-winning eye care center delivering world-class expertise with cutting-edge technology and compassionate service to over 50,000 satisfied patients
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">

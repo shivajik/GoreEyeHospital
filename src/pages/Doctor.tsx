@@ -119,7 +119,7 @@ export default function Doctor() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Why Choose Dr. Gore?</h2>
             <p className="text-xl text-blue-100">
-              Trusted by thousands of patients across Aurangabad
+              Trusted by thousands of patients
             </p>
           </div>
 
@@ -135,12 +135,12 @@ export default function Doctor() {
               },
               {
                 title: 'Patient Satisfaction',
-                desc: '18 years of building trust with over 50,000 satisfied patients across the region.',
+                desc: '18 years of building trust with over 50,000 satisfied patients.',
               },
             ].map((item, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                <p className="text-blue-100">{item.desc.replace(/Aurangabad/g, 'Chhatrapati Sambhajinagar')}</p>
+                <p className="text-blue-100">{item.desc}</p>
               </div>
             ))}
           </div>

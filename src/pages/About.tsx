@@ -55,7 +55,7 @@ export default function About() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">About Gore Netralaya and Laser Centre</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Pioneering excellence in eye care in Chhatrapati Sambhajinagar since 2006
+            Pioneering excellence in eye care since 2006
           </p>
         </div>
       </section>
