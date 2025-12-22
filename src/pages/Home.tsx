@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Eye, Users, Award, Star, ArrowRight, CheckCircle, Zap, Shield } from 'lucide-react';
+import hospitalTeamImage from '@assets/GoreHospitalTeam_1766400536527.jpg';
 
 export default function Home() {
   const stats = [
@@ -181,8 +182,8 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/5752290/pexels-photo-5752290.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Eye care professional"
+                  src={hospitalTeamImage}
+                  alt="Gore Hospital team"
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
