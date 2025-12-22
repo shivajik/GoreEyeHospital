@@ -3,26 +3,26 @@ import { Link } from 'react-router-dom';
 
 export default function Doctor() {
   const qualifications = [
-    { title: 'MS - Ophthalmology', detail: 'Specialist Degree in Eye Surgery' },
-    { title: 'Bachelor of Medicine', detail: 'Medical Degree' },
-    { title: 'Advanced Certifications', detail: 'Laser Surgery & Retinal Treatment' },
+    { title: 'MS - Ophthalmology', detail: 'Gold Medalist in MS Ophthalmology' },
+    { title: 'FRVS', detail: 'Fellow in Retina and Vitreous Surgery' },
+    { title: 'Registration Number', detail: '2006/03/1853' },
   ];
 
   const specializations = [
-    'Lazy Eye Exercises',
-    'Lens for Keratoconus',
-    'Vision Therapy Exercises',
-    'Scleral Contact Lens',
-    'Eye Exercises for Double Vision',
-    'Comprehensive Eye Examinations',
-    'LASIK & Refractive Surgery',
+    'Retinal Detachment Surgeries',
+    'Premium IOL & Traumatic Cataract',
+    'Scleral Fixated IOL',
+    'Vitreous Hemorrhage Treatment',
+    'Macular Hole & Epiretinal Membrane',
+    'Tractional Retinal Detachment',
     'Advanced Cataract Surgery',
+    'Comprehensive Eye Care',
   ];
 
   const achievements = [
-    { icon: Users, label: '50,000+', desc: 'Satisfied Patients' },
-    { icon: Award, label: '14+', desc: 'Years of Experience' },
-    { icon: Star, label: '4.9/5', desc: 'Average Rating' },
+    { icon: Award, label: 'Gold Medal', desc: 'MS Ophthalmology' },
+    { icon: Users, label: '4500+', desc: 'Complex Retina & Cataract Surgeries' },
+    { icon: Star, label: '14+', desc: 'Years of Experience' },
   ];
 
   return (
