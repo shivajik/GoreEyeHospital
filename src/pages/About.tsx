@@ -5,21 +5,21 @@ export default function About() {
   const testimonials = [
     {
       name: 'Ramesh Kumar',
-      city: 'Aurangabad',
+      city: 'Chhatrapati Sambhajinagar',
       rating: 5,
       text: 'Dr. Gore is an exceptional ophthalmologist. My cataract surgery went smoothly, and my vision has improved dramatically. Highly recommended!',
       image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
     },
     {
       name: 'Priya Sharma',
-      city: 'Aurangabad',
+      city: 'Chhatrapati Sambhajinagar',
       rating: 5,
       text: 'The LASIK procedure was painless and results were immediate. The staff is very professional and caring. Best decision ever!',
       image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=200',
     },
     {
       name: 'Rajesh Patel',
-      city: 'Aurangabad',
+      city: 'Chhatrapati Sambhajinagar',
       rating: 5,
       text: 'Dr. Gore detected my glaucoma early and prescribed the right treatment. His expertise and attention to detail are commendable.',
       image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200',
@@ -55,7 +55,7 @@ export default function About() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">About Gore Netralaya and Laser Centre</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Pioneering excellence in eye care since 2010
+            Pioneering excellence in eye care in Chhatrapati Sambhajinagar since 2006
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function About() {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Gore Netralaya and Laser Centre was founded in 2010 with a vision to provide world-class eye care services to the people of Aurangabad. What started as a small clinic has grown into a leading eye care center, trusted by over 50,000 patients.
+                Gore Netralaya and Laser Centre was founded in 2006 with a vision to provide world-class eye care services to the people of Chhatrapati Sambhajinagar. What started as a small clinic has grown into a leading eye care center, trusted by over 50,000 patients.
               </p>
               <p className="text-lg text-gray-700 mb-4">
                 Under the expert guidance of Dr. Abhijit Gore, our team has set new standards in ophthalmology and continues to deliver exceptional patient outcomes.
@@ -170,9 +170,9 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-12 text-center">Why Choose Gore Netralaya and Laser Centre?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              'Expert ophthalmologist with 14+ years of experience',
+              'Expert ophthalmologist with 18+ years of experience',
               'State-of-the-art diagnostic and surgical equipment',
-              'Personalized treatment plans for each patient',
+              'Personalized treatment plans for each patient in Chhatrapati Sambhajinagar',
               '24/7 emergency eye care services',
               'Affordable and transparent pricing',
               'Compassionate and patient-centric approach',

@@ -1,4 +1,4 @@
-import { GraduationCap, Award, Languages, MapPin, ChevronRight, Stethoscope, Star, Users } from 'lucide-react';
+import { GraduationCap, Award, ChevronRight, Stethoscope, Star, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Doctor() {
@@ -22,7 +22,7 @@ export default function Doctor() {
   const achievements = [
     { icon: Award, label: 'Gold Medal', desc: 'MS Ophthalmology' },
     { icon: Users, label: '4500+', desc: 'Complex Retina & Cataract Surgeries' },
-    { icon: Star, label: '14+', desc: 'Years of Experience' },
+    { icon: Star, label: '18+', desc: 'Years of Experience' },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function Doctor() {
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Dr. Abhijit Gore</h1>
-          <p className="text-2xl text-blue-100">MS - Ophthalmology | Leading Eye Specialist</p>
+          <p className="text-2xl text-blue-100">MS - Ophthalmology (Gold Medalist) | Leading Eye Specialist</p>
         </div>
       </section>
 
@@ -42,11 +42,11 @@ export default function Doctor() {
                 <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
                   <Stethoscope className="w-20 h-20 text-blue-600" />
                 </div>
-                <h2 className="text-3xl font-bold mb-2">Dr. Abhijit Gore</h2>
-                <p className="text-blue-100 text-lg mb-6">MS - Ophthalmology</p>
+                <h3 className="text-3xl font-bold mb-2">Dr. Abhijit Gore</h3>
+                <p className="text-blue-100 text-lg mb-6">MS - Ophthalmology (Gold Medalist)</p>
                 <div className="bg-white/20 backdrop-blur-lg rounded-xl px-6 py-3 mb-6">
-                  <p className="text-sm font-semibold">Practicing Since 2010</p>
-                  <p className="text-xs text-blue-200">14+ Years of Excellence</p>
+                  <p className="text-sm font-semibold">Practicing Since 2006</p>
+                  <p className="text-xs text-blue-200">18+ Years of Excellence</p>
                 </div>
 
                 <div className="space-y-3">
@@ -64,10 +64,10 @@ export default function Doctor() {
               <div className="mb-12">
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">About Dr. Gore</h3>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  Dr. Abhijit Gore is recognized as one of the best Ophthalmologists in Paithan Gate, Aurangabad. With over 14 years of dedicated experience since 2010, Dr. Gore has established himself as a leading expert in comprehensive eye care.
+                  Dr. Abhijit Gore is recognized as one of the best Ophthalmologists in Chhatrapati Sambhajinagar. With over 18 years of dedicated experience since 2006, Dr. Gore has established himself as a leading expert in comprehensive eye care.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Currently practicing at Gore Netralaya and Laser Centre in Paithan Gate, Aurangabad, Dr. Gore combines advanced medical expertise with compassionate patient care to deliver exceptional outcomes. His commitment to staying at the forefront of ophthalmology ensures patients receive the latest treatment options.
+                  Currently practicing at Gore Netralaya and Laser Centre in Chhatrapati Sambhajinagar, Dr. Gore combines advanced medical expertise with compassionate patient care to deliver exceptional outcomes. His commitment to staying at the forefront of ophthalmology ensures patients receive the latest treatment options.
                 </p>
               </div>
 
@@ -127,7 +127,7 @@ export default function Doctor() {
             {[
               {
                 title: 'Personalized Care',
-                desc: 'Each patient receives customized treatment plans tailored to their specific eye condition and needs.',
+                desc: 'Each patient receives customized treatment plans tailored to their specific eye condition and needs in Chhatrapati Sambhajinagar.',
               },
               {
                 title: 'Latest Technology',
@@ -135,12 +135,12 @@ export default function Doctor() {
               },
               {
                 title: 'Patient Satisfaction',
-                desc: '14 years of building trust with over 50,000 satisfied patients across the region.',
+                desc: '18 years of building trust with over 50,000 satisfied patients across the region.',
               },
             ].map((item, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                <p className="text-blue-100">{item.desc}</p>
+                <p className="text-blue-100">{item.desc.replace(/Aurangabad/g, 'Chhatrapati Sambhajinagar')}</p>
               </div>
             ))}
           </div>

@@ -27,8 +27,8 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: 'Nageshwarwadi - Nirala Bazar Rd',
-      subtext: 'Swatantrya Sainik Colony, Aurangpura, Chhatrapati Sambhajinagar, Maharashtra 431001',
+      content: 'Swatantrya Sainik Colony, Aurangpura, Chhatrapati Sambhajinagar',
+      subtext: 'Maharashtra 431001',
     },
     {
       icon: Phone,
@@ -229,7 +229,7 @@ export default function Contact() {
               style={{ border: 0 }}
               loading="lazy"
               allowFullScreen
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.689741816356!2d75.34552341082185!3d19.893868880650373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bca6ccf4c8e9a8d%3A0x123456789!2sAurangabad!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.288421051564!2d75.3211111!3d19.8888889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bca6d5427d1421f%3A0x6b7724128080f555!2sGore%20Netralaya!5e0!3m2!1sen!2sin!4v1711234567890"
             ></iframe>
           </div>
         </div>

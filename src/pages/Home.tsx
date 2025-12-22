@@ -4,7 +4,7 @@ import { Eye, Users, Award, Star, ArrowRight, CheckCircle, Zap, Shield } from 'l
 export default function Home() {
   const stats = [
     { icon: Users, value: '50,000+', label: 'Happy Patients' },
-    { icon: Award, value: '14+ Years', label: 'of Excellence' },
+    { icon: Award, value: '18+ Years', label: 'of Excellence' },
     { icon: Star, value: 'MS Ophthalmology', label: 'Expert Specialist' },
   ];
 
@@ -68,7 +68,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto leading-relaxed">
-              Award-winning eye care center delivering world-class expertise with cutting-edge technology and compassionate service to over 50,000 satisfied patients
+              Award-winning eye care center delivering world-class expertise with cutting-edge technology and compassionate service to over 50,000 satisfied patients in Chhatrapati Sambhajinagar
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -146,13 +146,13 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Excellence Since 2010
+                Excellence Since 2006
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Gore Netralaya and Laser Centre has been at the forefront of ophthalmology in Paithan Gate, Aurangabad, providing world-class eye care services to the community.
+                Gore Netralaya and Laser Centre has been at the forefront of ophthalmology in Chhatrapati Sambhajinagar, providing world-class eye care services to the community.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Under the expert guidance of Dr. Abhijit Gore, our dedicated team works tirelessly to ensure that each patient receives personalized care and the best possible outcomes.
+                Under the expert guidance of Dr. Abhijit Gore (MS Ophthalmology - Gold Medalist), our dedicated team works tirelessly to ensure that each patient receives personalized care and the best possible outcomes.
               </p>
 
               <div className="space-y-4">
