@@ -32,9 +32,9 @@ export default function Header() {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2 group cursor-pointer">
-            <div className={`p-1 rounded-lg transition-all ${isScrolled ? 'bg-white' : 'bg-white/10'}`}>
-              <img src={logoImage} alt="Gore Netralaya Logo" className="w-10 h-10 object-contain" />
+          <Link to="/" className="flex items-center space-x-3 group cursor-pointer">
+            <div className={`p-2 rounded-lg transition-all ${isScrolled ? 'bg-white' : 'bg-white/10'}`}>
+              <img src={logoImage} alt="Gore Netralaya Logo" className="w-16 h-16 object-contain" />
             </div>
             <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>Gore Netralaya and Laser Centre</span>
           </Link>

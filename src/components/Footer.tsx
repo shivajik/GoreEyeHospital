@@ -1,5 +1,6 @@
-import { Eye, MapPin, Phone, Mail, Facebook, Linkedin, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Linkedin, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logoImage from '@assets/Gore_Netralaya_and_Laser_Centre_1766401703179.png';
 
 export default function Footer() {
   return (
@@ -7,8 +8,8 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Eye className="w-8 h-8 text-blue-400" />
+            <div className="flex items-center space-x-3 mb-4">
+              <img src={logoImage} alt="Gore Netralaya Logo" className="w-12 h-12 object-contain" />
               <span className="text-xl font-bold">Gore Netralaya and Laser Centre</span>
             </div>
             <p className="text-gray-400 mb-4">
