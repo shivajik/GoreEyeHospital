@@ -1,5 +1,6 @@
 import { Star, Heart, Shield, Users, TrendingUp, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import hospitalTeamImage from '@assets/GoreHospitalTeam_1766400536527.jpg';
 
 export default function About() {
   const testimonials = [
@@ -78,8 +79,8 @@ export default function About() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Hospital interior"
+                  src={hospitalTeamImage}
+                  alt="Gore Hospital team"
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
