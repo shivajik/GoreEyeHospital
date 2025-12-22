@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Doctor from './pages/Doctor';
+import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import CataractSurgery from './pages/ServiceDetail/CataractSurgery';
@@ -40,6 +41,7 @@ function App() {
           <Route path="/services/pediatric-ophthalmology" element={<PediatricOphthalmology />} />
           <Route path="/services/cornea-services" element={<CorneaserviceServices />} />
           <Route path="/doctor" element={<Doctor />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

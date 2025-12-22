@@ -22,6 +22,7 @@ export default function Header() {
     { path: '/', label: 'Home' },
     { path: '/services', label: 'Services' },
     { path: '/doctor', label: 'Our Doctor' },
+    { path: '/gallery', label: 'Gallery' },
     { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' },
   ];

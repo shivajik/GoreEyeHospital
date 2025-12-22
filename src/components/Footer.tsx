@@ -33,6 +33,7 @@ export default function Footer() {
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
               <li><Link to="/doctor" className="text-gray-400 hover:text-white transition-colors">Our Doctor</Link></li>
+              <li><Link to="/gallery" className="text-gray-400 hover:text-white transition-colors">Gallery</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
             </ul>
           </div>
