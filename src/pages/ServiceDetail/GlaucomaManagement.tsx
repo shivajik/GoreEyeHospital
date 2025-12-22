@@ -124,7 +124,7 @@ export default function GlaucomaManagement() {
       <SEOHead
         title={`Glaucoma Management in ${CITY} | Early Detection & Treatment`}
         description={`Expert glaucoma care in ${CITY} with advanced diagnostics and treatment. Early detection prevents vision loss. Schedule your eye pressure screening today.`}
-        image="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg"
+        image="/og-image.png"
         schema={schema}
       />
       

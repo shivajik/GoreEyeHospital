@@ -25,7 +25,7 @@ export default function PediatricOphthalmology() {
       <SEOHead
         title={`Pediatric Ophthalmology in ${CITY} | Children's Eye Care Specialists`}
         description={`Expert pediatric eye care in ${CITY} with child-friendly approach. Squint correction, vision screening, and amblyopia treatment. Safe and compassionate care.`}
-        image="https://images.pexels.com/photos/6285310/pexels-photo-6285310.jpeg"
+        image="/og-image.png"
         schema={schema}
       />
       

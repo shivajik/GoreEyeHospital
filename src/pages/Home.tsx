@@ -33,6 +33,7 @@ export default function Home() {
       <SEOHead 
         title="Gore Netralaya and Laser Centre - Best Eye Hospital in Chhatrapati Sambhajinagar | 18+ Years" 
         description="Award-winning eye care center with 18+ years of expertise. Expert cataract, LASIK, retina, and glaucoma surgeries. Dr. Abhijit Gore, MS Ophthalmology Gold Medalist. 50,000+ satisfied patients. Book consultation now."
+        image="/og-image.png"
       />
     <div className="min-h-screen bg-white pt-20">
       <section className="relative h-screen flex items-center justify-center overflow-hidden -mt-20">

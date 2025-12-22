@@ -132,7 +132,7 @@ export default function LasikRefractiveSurgery() {
       <SEOHead
         title={`LASIK & Refractive Surgery in ${CITY} | ${HOSPITAL_NAME}`}
         description={`Achieve freedom from glasses with advanced LASIK surgery in ${CITY}. Bladeless technology, customized treatment, and lifetime care. Trusted eye specialists.`}
-        image="https://images.pexels.com/photos/3808221/pexels-photo-3808221.jpeg"
+        image="/og-image.png"
         schema={schema}
       />
       

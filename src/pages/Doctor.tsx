@@ -32,6 +32,7 @@ export default function Doctor() {
       <SEOHead 
         title="Dr. Abhijit Gore - MS Ophthalmology Gold Medalist | Eye Specialist in Chhatrapati Sambhajinagar" 
         description="Meet Dr. Abhijit Gore, expert ophthalmologist with 18+ years of experience. Gold Medalist in MS Ophthalmology. Specializes in cataract, retina, and complex eye surgeries. 4500+ successful surgeries."
+        image="/og-image.png"
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">

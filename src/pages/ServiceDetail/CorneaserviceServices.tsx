@@ -25,7 +25,7 @@ export default function CorneaserviceServices() {
       <SEOHead
         title={`Cornea Services in ${CITY} | Keratoconus & Corneal Transplant`}
         description={`Expert corneal care in ${CITY} including corneal transplant, keratoconus treatment, and dry eye management. Advanced surgical expertise.`}
-        image="https://images.pexels.com/photos/3808214/pexels-photo-3808214.jpeg"
+        image="/og-image.png"
         schema={schema}
       />
       

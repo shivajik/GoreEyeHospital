@@ -132,7 +132,7 @@ export default function CataractSurgery() {
       <SEOHead
         title={`Cataract Surgery in ${CITY} | ${HOSPITAL_NAME}`}
         description={`Expert cataract surgery in ${CITY} using advanced phacoemulsification technology. Same-day discharge, premium IOL options, and quick recovery. Schedule your consultation today.`}
-        image="https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg"
+        image="/og-image.png"
         schema={schema}
       />
       

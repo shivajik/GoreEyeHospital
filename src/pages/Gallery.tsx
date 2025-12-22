@@ -55,6 +55,7 @@ export default function Gallery() {
       <SEOHead 
         title="Clinic Gallery - Gore Netralaya and Laser Centre | State-of-the-Art Facilities" 
         description="Explore our modern eye care facility, advanced operating theatres, diagnostic equipment, and professional team. See why patients trust Gore Netralaya for their vision care."
+        image="/og-image.png"
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">

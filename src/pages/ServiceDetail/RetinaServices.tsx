@@ -131,7 +131,7 @@ export default function RetinaServices() {
       <SEOHead
         title={`Retina Services in ${CITY} | Diabetic Retinopathy Treatment`}
         description={`Expert retina care including diabetic retinopathy treatment in ${CITY}. Advanced vitreo-retinal surgery, anti-VEGF injections, and retinal imaging. Call us today.`}
-        image="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg"
+        image="/og-image.png"
         schema={schema}
       />
       

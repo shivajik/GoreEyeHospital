@@ -56,6 +56,7 @@ export default function About() {
       <SEOHead 
         title="About Gore Netralaya and Laser Centre - Leading Eye Care Center Since 2006" 
         description="Learn about Gore Netralaya's mission, vision, and values. Premier eye care center in Chhatrapati Sambhajinagar with state-of-the-art facilities, expert team, and 50,000+ satisfied patients since 2006."
+        image="/og-image.png"
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">

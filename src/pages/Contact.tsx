@@ -56,6 +56,7 @@ export default function Contact() {
       <SEOHead 
         title="Contact Gore Netralaya - Book Appointment with Eye Specialist | Chhatrapati Sambhajinagar" 
         description="Get in touch with Gore Netralaya and Laser Centre. Book your eye care appointment with Dr. Abhijit Gore. Call +91 94226 53331 or visit us in Chhatrapati Sambhajinagar."
+        image="/og-image.png"
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">

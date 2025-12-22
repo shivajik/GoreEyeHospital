@@ -90,6 +90,7 @@ export default function Services() {
       <SEOHead 
         title="Eye Care Services - Cataract, LASIK, Retina & Glaucoma Surgery | Gore Netralaya" 
         description="Comprehensive eye care services including advanced cataract surgery, LASIK, retina treatment, glaucoma management, pediatric eye care, and cornea services. Expert care by Dr. Abhijit Gore."
+        image="/og-image.png"
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">
