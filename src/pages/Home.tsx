@@ -3,9 +3,9 @@ import { Eye, Users, Award, Star, ArrowRight, CheckCircle, Zap, Shield } from 'l
 
 export default function Home() {
   const stats = [
-    { icon: Users, value: '50,000+', label: 'Happy Patients' },
+    { icon: Users, value: '4500+', label: 'Complex Surgeries' },
     { icon: Award, value: '18+ Years', label: 'of Excellence' },
-    { icon: Star, value: 'MS Ophthalmology', label: 'Expert Specialist' },
+    { icon: Star, value: 'Gold Medalist', label: 'MS Ophthalmology' },
   ];
 
   const highlights = [
