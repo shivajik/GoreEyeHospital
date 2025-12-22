@@ -54,73 +54,68 @@ const services = [
 
 export default function ServicesMegaMenu() {
   return (
-    <div className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100 pt-3 z-50 w-screen`} style={{ maxWidth: '800px' }}>
-      <div className={`bg-white shadow-xl rounded-xl overflow-hidden border border-gray-100`}>
-        <div className="p-6">
+    <div className={`absolute top-full left-1/2 -translate-x-1/2 transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100 pt-2 z-50 w-screen`} style={{ maxWidth: '900px' }}>
+      <div className={`bg-white shadow-xl rounded-lg overflow-hidden border border-gray-100`}>
+        <div className="p-4">
           {/* Header */}
-          <div className="mb-5">
-            <h3 className="text-lg font-bold text-gray-900 mb-1">Our Services</h3>
-            <p className="text-sm text-gray-600">Professional eye care solutions</p>
+          <div className="mb-4">
+            <h3 className="text-base font-bold text-gray-900">Our Services</h3>
+            <p className="text-xs text-gray-500">Professional eye care solutions</p>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid grid-cols-2 gap-4">
+          {/* Services Grid - 3 columns for compact view */}
+          <div className="grid grid-cols-3 gap-3">
             {services.map((service) => {
               const Icon = service.icon;
               return (
                 <Link
                   key={service.id}
                   to={service.path}
-                  className="group/item relative overflow-hidden rounded-xl transition-all duration-300 hover:shadow-lg"
+                  className="group/item relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-md"
                 >
                   {/* Background gradient */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover/item:opacity-10 transition-opacity duration-300`}></div>
 
                   {/* Content */}
-                  <div className="relative p-4">
+                  <div className="relative p-3">
                     {/* Icon */}
-                    <div className={`mb-3 inline-flex p-2 rounded-lg bg-gradient-to-br ${service.color}`}>
-                      <Icon className="w-5 h-5 text-white" />
+                    <div className={`mb-2 inline-flex p-1.5 rounded-lg bg-gradient-to-br ${service.color}`}>
+                      <Icon className="w-4 h-4 text-white" />
                     </div>
 
                     {/* Title */}
-                    <h4 className="text-base font-bold text-gray-900 mb-1 group-hover/item:text-blue-600 transition-all duration-300 line-clamp-1">
+                    <h4 className="text-sm font-bold text-gray-900 mb-1 group-hover/item:text-blue-600 transition-all duration-300 line-clamp-2">
                       {service.title}
                     </h4>
 
                     {/* Description */}
-                    <p className="text-xs text-gray-600 mb-3 line-clamp-1">
+                    <p className="text-xs text-gray-500 mb-2 line-clamp-1">
                       {service.description}
                     </p>
 
                     {/* Link */}
                     <div className="flex items-center text-xs font-semibold text-blue-600 group-hover/item:text-blue-700 transition-colors">
                       <span>Learn More</span>
-                      <ArrowRight className="w-3 h-3 ml-1 group-hover/item:translate-x-0.5 transition-transform" />
+                      <ArrowRight className="w-2.5 h-2.5 ml-0.5 group-hover/item:translate-x-0.5 transition-transform" />
                     </div>
                   </div>
 
                   {/* Bottom border accent */}
-                  <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${service.color} scale-x-0 group-hover/item:scale-x-100 transition-transform duration-300 origin-left`}></div>
+                  <div className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r ${service.color} scale-x-0 group-hover/item:scale-x-100 transition-transform duration-300 origin-left`}></div>
                 </Link>
               );
             })}
           </div>
 
           {/* Footer CTA */}
-          <div className="mt-5 pt-4 border-t border-gray-200">
-            <div className="flex items-center justify-between gap-4">
-              <p className="text-xs text-gray-600">
-                View all services
-              </p>
-              <Link
-                to="/services"
-                className="inline-flex items-center space-x-1 bg-blue-600 text-white px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-blue-700 transition-all"
-              >
-                <span>All Services</span>
-                <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
+          <div className="mt-3 pt-3 border-t border-gray-100 text-right">
+            <Link
+              to="/services"
+              className="inline-flex items-center space-x-1 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold hover:bg-blue-700 transition-all"
+            >
+              <span>All Services</span>
+              <ArrowRight className="w-3 h-3" />
+            </Link>
           </div>
         </div>
       </div>
