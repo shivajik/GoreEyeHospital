@@ -1,40 +1,47 @@
 import { useState } from 'react';
 import { ImageIcon, X, Maximize2 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
+import img1 from '@assets/1_1766399364205.jpg';
+import img3 from '@assets/3_1766399370550.jpg';
+import imgt2 from '@assets/t2_1766399377288.jpg';
+import imgTeam from '@assets/team_1766399387769.jpg';
+import img8 from '@assets/8_1766399394586.jpg';
+import img5 from '@assets/5_1766399400954.jpg';
+import imgOT from '@assets/ot1_1766400741410.jpg';
 
 const galleryImages = [
   {
-    url: '/attached_assets/1_1766399364205.jpg',
+    url: img1,
     title: 'Dr. Abhijit Gore in Consultation',
     category: 'Consultation'
   },
   {
-    url: '/attached_assets/3_1766399370550.jpg',
+    url: img3,
     title: 'Advanced Eye Examination',
     category: 'Diagnostics'
   },
   {
-    url: '/attached_assets/t2_1766399377288.jpg',
+    url: imgt2,
     title: 'Dr. Gore with Team',
     category: 'Team'
   },
   {
-    url: '/attached_assets/team_1766399387769.jpg',
+    url: imgTeam,
     title: 'Gore Netralaya Support Staff',
     category: 'Team'
   },
   {
-    url: '/attached_assets/8_1766399394586.jpg',
+    url: img8,
     title: 'Gore Netralaya and Laser Centre Building',
     category: 'Facility'
   },
   {
-    url: '/attached_assets/5_1766399400954.jpg',
+    url: img5,
     title: 'Patient Care & Treatment',
     category: 'Treatment'
   },
   {
-    url: '/attached_assets/ot1_1766400741410.jpg',
+    url: imgOT,
     title: 'Advanced Operating Theatre',
     category: 'Surgery'
   }
