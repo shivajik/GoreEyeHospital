@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Eye, Users, Award, Star, ArrowRight, CheckCircle, Zap, Shield } from 'lucide-react';
 import hospitalTeamImage from '@assets/GoreHospitalTeam_1766400536527.jpg';
+import { SEOHead } from '../components/SEOHead';
 
 export default function Home() {
   const stats = [
@@ -28,6 +29,11 @@ export default function Home() {
   ];
 
   return (
+    <>
+      <SEOHead 
+        title="Gore Netralaya and Laser Centre - Best Eye Hospital in Chhatrapati Sambhajinagar | 18+ Years" 
+        description="Award-winning eye care center with 18+ years of expertise. Expert cataract, LASIK, retina, and glaucoma surgeries. Dr. Abhijit Gore, MS Ophthalmology Gold Medalist. 50,000+ satisfied patients. Book consultation now."
+      />
     <div className="min-h-screen bg-white pt-20">
       <section className="relative h-screen flex items-center justify-center overflow-hidden -mt-20">
         {/* Animated gradient background */}
@@ -216,5 +222,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

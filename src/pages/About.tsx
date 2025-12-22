@@ -1,6 +1,7 @@
 import { Star, Heart, Shield, Users, TrendingUp, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import hospitalTeamImage from '@assets/GoreHospitalTeam_1766400536527.jpg';
+import { SEOHead } from '../components/SEOHead';
 
 export default function About() {
   const testimonials = [
@@ -51,6 +52,11 @@ export default function About() {
   ];
 
   return (
+    <>
+      <SEOHead 
+        title="About Gore Netralaya and Laser Centre - Leading Eye Care Center Since 2006" 
+        description="Learn about Gore Netralaya's mission, vision, and values. Premier eye care center in Chhatrapati Sambhajinagar with state-of-the-art facilities, expert team, and 50,000+ satisfied patients since 2006."
+      />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">
         <div className="container mx-auto px-4 text-center">
@@ -206,5 +212,6 @@ export default function About() {
         </div>
       </section>
     </div>
+    </>
   );
 }

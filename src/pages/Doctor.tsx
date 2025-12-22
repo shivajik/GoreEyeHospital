@@ -1,6 +1,7 @@
 import { GraduationCap, Award, ChevronRight, Star, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import drGoreImage from '@assets/DrAbhijitGore_1766400418418.jpg';
+import { SEOHead } from '../components/SEOHead';
 
 export default function Doctor() {
   const qualifications = [
@@ -27,6 +28,11 @@ export default function Doctor() {
   ];
 
   return (
+    <>
+      <SEOHead 
+        title="Dr. Abhijit Gore - MS Ophthalmology Gold Medalist | Eye Specialist in Chhatrapati Sambhajinagar" 
+        description="Meet Dr. Abhijit Gore, expert ophthalmologist with 18+ years of experience. Gold Medalist in MS Ophthalmology. Specializes in cataract, retina, and complex eye surgeries. 4500+ successful surgeries."
+      />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">
         <div className="container mx-auto px-4 text-center">
@@ -166,5 +172,6 @@ export default function Doctor() {
         </div>
       </section>
     </div>
+    </>
   );
 }
