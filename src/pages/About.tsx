@@ -51,12 +51,32 @@ export default function About() {
     },
   ];
 
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Gore Netralaya and Laser Centre',
+    url: 'https://gorenetralaya.com/about',
+    description: 'Leading eye care center established in 2006, dedicated to providing world-class ophthalmology services.',
+    foundingDate: '2006',
+    founders: [{
+      '@type': 'Person',
+      name: 'Dr. Abhijit Gore',
+    }],
+    areaServed: {
+      '@type': 'City',
+      name: 'Chhatrapati Sambhajinagar',
+    },
+    award: ['MS Ophthalmology Gold Medalist'],
+    knowsAbout: ['Eye Care', 'Ophthalmology', 'Cataract Surgery', 'LASIK Surgery', 'Retina Surgery'],
+  };
+
   return (
     <>
       <SEOHead 
         title="About Gore Netralaya and Laser Centre - Leading Eye Care Center Since 2006" 
         description="Learn about Gore Netralaya's mission, vision, and values. Premier eye care center in Chhatrapati Sambhajinagar with state-of-the-art facilities, expert team, and 50,000+ satisfied patients since 2006."
         image="/og-image.png"
+        schema={schema}
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">

@@ -27,12 +27,33 @@ export default function Doctor() {
     { icon: Star, label: '18+', desc: 'Years of Experience' },
   ];
 
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Dr. Abhijit Gore',
+    jobTitle: 'Ophthalmologist, Founder & Chief Eye Surgeon',
+    description: 'Expert ophthalmologist with 18+ years of experience and MS Gold Medal in Ophthalmology',
+    image: 'https://gorenetralaya.com/og-image.png',
+    sameAs: [],
+    worksFor: {
+      '@type': 'MedicalBusiness',
+      name: 'Gore Netralaya and Laser Centre',
+    },
+    knowsAbout: ['Cataract Surgery', 'Retina Surgery', 'LASIK Surgery', 'Glaucoma Treatment', 'Corneal Surgery'],
+    award: 'Gold Medalist - MS Ophthalmology',
+    credentials: [
+      { '@type': 'EducationalOccupationalCredential', name: 'MS - Ophthalmology', credentialCategory: 'Professional' },
+      { '@type': 'EducationalOccupationalCredential', name: 'FRVS - Fellow in Retina and Vitreous Surgery', credentialCategory: 'Professional' },
+    ],
+  };
+
   return (
     <>
       <SEOHead 
         title="Dr. Abhijit Gore - MS Ophthalmology Gold Medalist | Eye Specialist in Chhatrapati Sambhajinagar" 
         description="Meet Dr. Abhijit Gore, expert ophthalmologist with 18+ years of experience. Gold Medalist in MS Ophthalmology. Specializes in cataract, retina, and complex eye surgeries. 4500+ successful surgeries."
         image="/og-image.png"
+        schema={schema}
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">

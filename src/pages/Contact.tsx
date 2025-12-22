@@ -51,12 +51,36 @@ export default function Contact() {
     },
   ];
 
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Gore Netralaya and Laser Centre',
+    url: 'https://gorenetralaya.com/contact',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Swatantrya Sainik Colony, Aurangpura',
+      addressLocality: 'Chhatrapati Sambhajinagar',
+      addressRegion: 'Maharashtra',
+      postalCode: '431001',
+      addressCountry: 'IN',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Service',
+      telephone: '+91 94226 53331',
+      email: 'info@gorenetralaya.com',
+      hoursAvailable: 'Mo-Sa 09:00-19:00, Su 09:00-14:00',
+      areaServed: 'Chhatrapati Sambhajinagar',
+    },
+  };
+
   return (
     <>
       <SEOHead 
         title="Contact Gore Netralaya - Book Appointment with Eye Specialist | Chhatrapati Sambhajinagar" 
         description="Get in touch with Gore Netralaya and Laser Centre. Book your eye care appointment with Dr. Abhijit Gore. Call +91 94226 53331 or visit us in Chhatrapati Sambhajinagar."
         image="/og-image.png"
+        schema={schema}
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">

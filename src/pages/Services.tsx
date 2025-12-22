@@ -4,6 +4,54 @@ import { getServiceSlug } from '../utils/slugify';
 import { SEOHead } from '../components/SEOHead';
 
 export default function Services() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalBusiness',
+    name: 'Gore Netralaya and Laser Centre',
+    url: 'https://gorenetralaya.com/services',
+    description: 'Comprehensive eye care services including cataract surgery, LASIK, retina treatment, glaucoma management, pediatric ophthalmology, and cornea services.',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Swatantrya Sainik Colony, Aurangpura',
+      addressLocality: 'Chhatrapati Sambhajinagar',
+      addressRegion: 'Maharashtra',
+      postalCode: '431001',
+    },
+    telephone: '+91 94226 53331',
+    services: [
+      {
+        '@type': 'MedicalService',
+        name: 'Cataract Surgery',
+        description: 'Advanced phacoemulsification with premium IOL options',
+      },
+      {
+        '@type': 'MedicalService',
+        name: 'LASIK & Refractive Surgery',
+        description: 'Freedom from glasses with bladeless LASIK technology',
+      },
+      {
+        '@type': 'MedicalService',
+        name: 'Retina Services',
+        description: 'Comprehensive retinal care including diabetic retinopathy treatment',
+      },
+      {
+        '@type': 'MedicalService',
+        name: 'Glaucoma Management',
+        description: 'Early detection and advanced treatment to preserve vision',
+      },
+      {
+        '@type': 'MedicalService',
+        name: 'Pediatric Ophthalmology',
+        description: 'Specialized care for children\'s eye health and development',
+      },
+      {
+        '@type': 'MedicalService',
+        name: 'Cornea Services',
+        description: 'Expert treatment for corneal disorders and transplantation',
+      },
+    ],
+  };
+
   const services = [
     {
       id: 1,
@@ -91,6 +139,7 @@ export default function Services() {
         title="Eye Care Services - Cataract, LASIK, Retina & Glaucoma Surgery | Gore Netralaya" 
         description="Comprehensive eye care services including advanced cataract surgery, LASIK, retina treatment, glaucoma management, pediatric eye care, and cornea services. Expert care by Dr. Abhijit Gore."
         image="/og-image.png"
+        schema={schema}
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">

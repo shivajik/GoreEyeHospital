@@ -4,6 +4,35 @@ import hospitalTeamImage from '@assets/GoreHospitalTeam_1766400536527.jpg';
 import { SEOHead } from '../components/SEOHead';
 
 export default function Home() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': '#organization',
+    name: 'Gore Netralaya and Laser Centre',
+    description: 'Award-winning eye care center with 18+ years of expertise in advanced cataract surgery, LASIK, retina care, glaucoma management, and pediatric ophthalmology.',
+    image: '/og-image.png',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Swatantrya Sainik Colony, Aurangpura',
+      addressLocality: 'Chhatrapati Sambhajinagar',
+      addressRegion: 'Maharashtra',
+      postalCode: '431001',
+      addressCountry: 'IN',
+    },
+    telephone: '+91 94226 53331',
+    email: 'info@gorenetralaya.com',
+    url: 'https://gorenetralaya.com',
+    sameAs: [],
+    priceRange: '$$',
+    knowsAbout: ['Cataract Surgery', 'LASIK Surgery', 'Retina Services', 'Glaucoma Management', 'Pediatric Ophthalmology', 'Cornea Services'],
+    foundingDate: '2006',
+    founder: {
+      '@type': 'Person',
+      name: 'Dr. Abhijit Gore',
+      jobTitle: 'Founder & Chief Ophthalmologist',
+    },
+  };
+
   const stats = [
     { icon: Users, value: '4500+', label: 'Complex Surgeries' },
     { icon: Award, value: '18+ Years', label: 'of Excellence' },
@@ -34,6 +63,7 @@ export default function Home() {
         title="Gore Netralaya and Laser Centre - Best Eye Hospital in Chhatrapati Sambhajinagar | 18+ Years" 
         description="Award-winning eye care center with 18+ years of expertise. Expert cataract, LASIK, retina, and glaucoma surgeries. Dr. Abhijit Gore, MS Ophthalmology Gold Medalist. 50,000+ satisfied patients. Book consultation now."
         image="/og-image.png"
+        schema={schema}
       />
     <div className="min-h-screen bg-white pt-20">
       <section className="relative h-screen flex items-center justify-center overflow-hidden -mt-20">

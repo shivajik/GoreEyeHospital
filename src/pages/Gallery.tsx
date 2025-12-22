@@ -50,12 +50,25 @@ const galleryImages = [
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
 
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ImageGallery',
+    name: 'Gore Netralaya and Laser Centre Gallery',
+    description: 'Gallery showcasing our state-of-the-art eye care facility, advanced operating theatres, diagnostic equipment, and professional team.',
+    associatedMedia: galleryImages.map((image) => ({
+      '@type': 'ImageObject',
+      name: image.title,
+      description: `${image.title} - ${image.category}`,
+    })),
+  };
+
   return (
     <>
       <SEOHead 
         title="Clinic Gallery - Gore Netralaya and Laser Centre | State-of-the-Art Facilities" 
         description="Explore our modern eye care facility, advanced operating theatres, diagnostic equipment, and professional team. See why patients trust Gore Netralaya for their vision care."
         image="/og-image.png"
+        schema={schema}
       />
     <div className="min-h-screen bg-white">
       <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white -mt-20 pt-40">
