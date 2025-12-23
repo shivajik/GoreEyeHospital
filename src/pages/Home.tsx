@@ -66,7 +66,7 @@ export default function Home() {
         schema={schema}
       />
     <div className="min-h-screen bg-white pt-20">
-      <section className="relative min-h-screen md:h-screen flex flex-col justify-between overflow-hidden -mt-20 pt-20 pb-24 md:pb-0 md:pt-0">
+      <section className="relative h-auto md:min-h-screen flex flex-col overflow-hidden -mt-20 md:pt-0">
         {/* Animated gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-blue-700 to-cyan-600"></div>
         
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="absolute bottom-32 md:bottom-20 right-10 w-40 h-40 md:w-80 md:h-80 bg-cyan-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-1/2 left-1/4 w-40 h-40 md:w-64 md:h-64 bg-purple-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
 
-        <div className="relative z-10 flex items-center justify-center flex-1">
+        <div className="relative z-10 flex items-center justify-center md:flex-1 py-12 md:py-0">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="max-w-4xl mx-auto space-y-4 md:space-y-8 animate-fade-in">
               <div className="inline-block mb-2 md:mb-4">
