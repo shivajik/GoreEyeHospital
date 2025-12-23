@@ -35,7 +35,7 @@ export default function Home() {
 
   const stats = [
     { icon: Users, value: '4500+', label: 'Complex Surgeries' },
-    { icon: Award, value: '18+ Years', label: 'of Excellence' },
+    { icon: Award, value: '10+ Years', label: 'of Excellence' },
     { icon: Star, value: 'Gold Medalist', label: 'MS Ophthalmology' },
   ];
 
