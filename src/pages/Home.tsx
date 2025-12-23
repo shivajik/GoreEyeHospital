@@ -66,7 +66,7 @@ export default function Home() {
         schema={schema}
       />
     <div className="min-h-screen bg-white pt-20">
-      <section className="relative h-auto md:min-h-screen flex flex-col overflow-hidden -mt-20 md:pt-0">
+      <section className="relative h-auto md:min-h-screen flex flex-col overflow-hidden md:-mt-20 pt-20 md:pt-0">
         {/* Animated gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-blue-700 to-cyan-600"></div>
         
