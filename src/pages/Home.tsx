@@ -102,7 +102,7 @@ export default function Home() {
                 </span>
               </div>
               
-              <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent animate-pulse-ring">
+              <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent">
                 Your Vision,<br />Our Mission
               </h1>
               
