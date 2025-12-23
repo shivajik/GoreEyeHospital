@@ -66,7 +66,7 @@ export default function Home() {
         schema={schema}
       />
     <div className="min-h-screen bg-white pt-20">
-      <section className="relative h-screen flex items-center justify-center overflow-hidden -mt-20">
+      <section className="relative min-h-screen md:h-screen flex flex-col justify-between overflow-hidden -mt-20 pt-20 pb-24 md:pb-0 md:pt-0">
         {/* Animated gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-blue-700 to-cyan-600"></div>
         
@@ -88,62 +88,64 @@ export default function Home() {
         ></div>
 
         {/* Animated floating elements */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-purple-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-20 left-10 w-40 h-40 md:w-72 md:h-72 bg-blue-400/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-32 md:bottom-20 right-10 w-40 h-40 md:w-80 md:h-80 bg-cyan-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/4 w-40 h-40 md:w-64 md:h-64 bg-purple-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
 
-        <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            <div className="inline-block mb-4">
-              <span className="badge-professional bg-white/10 text-white border-white/30">
-                <Eye className="w-4 h-4" />
-                Vision is Our Priority
-              </span>
-            </div>
-            
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent animate-pulse-ring">
-              Your Vision,<br />Our Mission
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto leading-relaxed">
-              Award-winning eye care center delivering world-class expertise with cutting-edge technology and compassionate service to over 50,000 satisfied patients
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Link
-                to="/contact"
-                className="button-interactive bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center justify-center space-x-2 border-2 border-white/30"
-              >
-                <span>Book Consultation</span>
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                to="/services"
-                className="button-interactive border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 inline-flex items-center justify-center space-x-2"
-              >
-                <span>Explore Services</span>
-                <ArrowRight className="w-5 h-5" />
-              </Link>
+        <div className="relative z-10 flex items-center justify-center flex-1">
+          <div className="container mx-auto px-4 text-center text-white">
+            <div className="max-w-4xl mx-auto space-y-4 md:space-y-8 animate-fade-in">
+              <div className="inline-block mb-2 md:mb-4">
+                <span className="badge-professional bg-white/10 text-white border-white/30 text-sm md:text-base">
+                  <Eye className="w-4 h-4" />
+                  Vision is Our Priority
+                </span>
+              </div>
+              
+              <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent animate-pulse-ring">
+                Your Vision,<br />Our Mission
+              </h1>
+              
+              <p className="text-base sm:text-lg md:text-2xl text-blue-50 max-w-3xl mx-auto leading-relaxed px-2">
+                Award-winning eye care center delivering world-class expertise with cutting-edge technology and compassionate service to over 50,000 satisfied patients
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 md:pt-8">
+                <Link
+                  to="/contact"
+                  className="button-interactive bg-white text-blue-600 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center justify-center space-x-2 border-2 border-white/30 text-sm md:text-base"
+                >
+                  <span>Book Consultation</span>
+                  <ArrowRight className="w-4 md:w-5 h-4 md:h-5" />
+                </Link>
+                <Link
+                  to="/services"
+                  className="button-interactive border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 inline-flex items-center justify-center space-x-2 text-sm md:text-base"
+                >
+                  <span>Explore Services</span>
+                  <ArrowRight className="w-4 md:w-5 h-4 md:h-5" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Stats bar at bottom */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-white to-blue-50 py-8 shadow-xl border-t border-blue-100">
+        {/* Stats bar */}
+        <div className="relative z-10 bg-gradient-to-r from-white to-blue-50 py-6 md:py-8 shadow-xl border-t border-blue-100">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               {stats.map((stat, idx) => (
                 <div 
                   key={idx} 
-                  className="flex items-center justify-center space-x-3 animate-fade-in" 
+                  className="flex flex-col sm:flex-row items-center justify-center sm:justify-start md:justify-center gap-3 animate-fade-in px-2" 
                   style={{ animationDelay: `${0.2 + idx * 0.1}s` }}
                 >
-                  <div className="p-3 bg-blue-100 rounded-lg">
-                    <stat.icon className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <div className="p-2 md:p-3 bg-blue-100 rounded-lg flex-shrink-0">
+                    <stat.icon className="w-5 md:w-6 h-5 md:h-6 text-blue-600" />
                   </div>
-                  <div className="text-left">
-                    <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
+                  <div className="text-center sm:text-left">
+                    <div className="text-xl md:text-2xl font-bold text-gray-900">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-gray-600">{stat.label}</div>
                   </div>
                 </div>
               ))}
